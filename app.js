@@ -128,8 +128,11 @@ function count_points() {
   if (current_player == "0") {
     count1 += 1;
     user__count1.innerHTML = count1;
-  } else {
+  } else if (current_player == "X") {
     count2 += 1;
     user__count2.innerHTML = count2;
+  } else if (current_player == "O") {
+    count1 += 1;
+    user__count1.innerHTML = count1;
   }
 }
